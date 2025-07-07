@@ -12,7 +12,11 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>21.0.7</java.version>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
   </properties>
+
   <dependencies>
   <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
   <dependency>
@@ -79,4 +83,17 @@
     <version>1.0.2</version>
   </dependency>
   </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.10.1</version> <!-- or newer -->
+        <configuration>
+          <source>21</source>  <!-- Use 11 if using Java 11; or 17, 21 as needed -->
+          <target>21</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>

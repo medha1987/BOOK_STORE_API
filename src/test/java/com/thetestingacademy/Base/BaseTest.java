@@ -8,8 +8,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 import io.restassured.RestAssured;
 
 
@@ -24,7 +23,7 @@ public class BaseTest {
     public PayLoadManager payLoadManager;
     public AssertActions assertActions;
 
-    @BeforeTest
+    @BeforeMethod
     public void setup() {
         System.out.println("Starting of the Test");
         payLoadManager = new PayLoadManager();
@@ -49,7 +48,7 @@ public class BaseTest {
     }*/
 
 
-    @AfterTest
+    @AfterMethod
     public void tearDown() {
         System.out.println("Finished the Test!");
     }

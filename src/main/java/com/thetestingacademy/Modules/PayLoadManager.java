@@ -38,7 +38,7 @@ public class PayLoadManager {
         System.out.println("isbn:"+Book1.getIsbn());
         return Book1.getIsbn();
 
-        public String AddBookUser() {
+        /*public String AddBookUser() {
             Add_Book add = new Add_Book();
             add.setUserId("0b1a43f4-b2f8-4c18-a4f0-fbcfc332d32f");
             CollectionOfIsbn isbn=new CollectionOfIsbn();
@@ -49,7 +49,7 @@ public class PayLoadManager {
             System.out.println("Payload set to the -> " + jsonPayloadString);
             return jsonPayloadString;
 
-        }
+        }*/
 
     }
 
